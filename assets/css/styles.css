@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'GT Alpina Typewriter';
+  src: url('assets/font/GT-Alpina-Typewriter-Light-Trial.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: -5px;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('assets/font/SuisseIntl-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-family: 'Suisse Intl', sans-serif;
+}
+
+#title h1 {
+  font-family: 'GT Alpina Typewriter', serif;
+  font-size: 70px;
+  font-weight: 1100;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  letter-spacing: -5px;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+#title h2 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  position: absolute;
+  left: 40%;
+  top: 49%;
+}
+
+#signup {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  user-select: none;
+}
+
+#signup-form .form-group {
+  margin-bottom: 10px;
+}
+
+#signup-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#signup h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+#signup-form input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+#signup-form input[type="email"]:focus {
+  outline: none;
+  border-color: #63636367;
+  box-shadow: 0px 0px 8px rgba(93, 94, 94, 0.315);
+}
+
+#signup-form input[type="submit"] {
+  appearance: none;
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#signup-form input[type="submit"]:hover {
+  background-color: #555;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+#signup-form input[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(142, 142, 143, 0.365);
+}
